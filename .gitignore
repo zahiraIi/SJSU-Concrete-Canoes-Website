@@ -23,3 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 .vercel
+
+# Sensitive files
+bluebubblesapp-dfd30-b60507f4fa95.json
+src/utils/service-account-example.json
+*.json.key
+*-service-account.json
+service-account*.json
