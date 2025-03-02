@@ -1,0 +1,13 @@
+{
+  "name": "sjsu-concrete-canoes-api",
+  "version": "1.0.0",
+  "description": "API functions for SJSU Concrete Canoes website",
+  "main": "index.js",
+  "dependencies": {
+    "googleapis": "^126.0.1",
+    "multiparty": "^4.2.3"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+} 

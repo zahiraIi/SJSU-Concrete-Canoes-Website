@@ -1,59 +1,84 @@
-# SJSU-Concrete-Canoes-Website
-The official website for SJSU Concrete Canoes Website. 
+# SJSU Concrete Canoe Team Website
 
-## Development
+This is the official website for the San Jose State University Concrete Canoe Team. The website showcases the team's achievements, competitions, and provides a platform for donations and support.
+
+## Features
+
+- Modern, responsive design built with React.js and Tailwind CSS
+- Animated UI components using Framer Motion
+- Intuitive donation system with redirect to official SJSU donation page
+- Mobile-friendly navigation
+- Fast loading with code splitting and lazy loading
+
+## Technologies Used
+
+- React.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion (animations)
+- React Router (navigation)
+- Headless UI (accessible UI components)
+
+## Getting Started
 
 ### Prerequisites
 
-- Node.js
-- npm
-- React
-- Tailwind CSS
-- TypeScript
-- Vite
+- Node.js (v14 or higher)
+- npm or yarn
 
 ### Installation
 
-1. Clone the repository
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/SJSU-Concrete-Canoes-Website.git
+   cd SJSU-Concrete-Canoes-Website
+   ```
 
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-```bash
-git clone https://github.com/sjsu-concrete-canoes/sjsu-concrete-canoes-website.git
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Building for Production
+
+To create a production build:
+
+```
+npm run build
 ```
 
-2. Install dependencies
+The build files will be located in the `dist` directory.
 
-```bash
-npm install
-```
+## Project Structure
 
-3. Start the development server
+- `src/components/` - Reusable UI components
+- `src/pages/` - Page components for each route
+- `src/assets/` - Static assets like images and icons
+- `src/styles/` - Global styles and Tailwind configuration
+- `src/hooks/` - Custom React hooks
+- `src/utils/` - Utility functions
 
-```bash
-npm run dev
-```
-
-4. Open your browser and navigate to `http://localhost:5173` to view the website.
-
-### Contributing
+## Contributing
 
 1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-2. Create a new branch
+## License
 
-3. Make your changes and commit them             
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-4. Push your changes to your fork
+## Acknowledgments
 
-5. Create a pull request
-
-6. Wait for your pull request to be merged
-
-### Deployment
-
-1. Run `npm run build` to build the project
-
-2. Run `npm run deploy` to deploy the project
-
-3. Run `npm run preview` to preview the project
-
+- San Jose State University
+- SJSU Concrete Canoe Team members
+- ASCE Student Chapter
