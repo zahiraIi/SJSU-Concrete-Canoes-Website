@@ -67,7 +67,7 @@ export function SponsorsCarousel({ sponsors }: SponsorsCarouselProps) {
           className="flex transform-gpu items-center gap-12 md:gap-20"
           aria-hidden
           animate={{ x: ["0%", "-50%"] }}
-          transition={{ repeat: Number.POSITIVE_INFINITY, duration: 45, ease: "linear" }}
+          transition={{ repeat: Number.POSITIVE_INFINITY, duration: 35, ease: "linear" }}
         >
           {items.map((sponsor, index) => (
             <SponsorMark key={`${sponsor.name}-${index}`} sponsor={sponsor} />

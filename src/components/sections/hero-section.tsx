@@ -70,20 +70,20 @@ export function HeroSection({ hero }: HeroSectionProps) {
       </div>
 
       <div
-        className={`relative z-40 mx-auto mt-auto w-full max-w-[1400px] gap-x-6 gap-y-10 px-5 pb-10 pt-20 md:grid md:items-end md:px-10 md:pb-12 md:pt-24 lg:px-12 ${
+        className={`relative z-40 mx-auto mt-auto flex w-full max-w-[1400px] flex-col items-start gap-6 px-5 pb-10 pt-20 md:grid md:items-end md:gap-x-6 md:gap-y-10 md:px-10 md:pb-12 md:pt-24 lg:px-12 ${
           showCta
             ? "md:grid-cols-[minmax(0,1.05fr)_minmax(0,1.2fr)_auto]"
             : "md:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)]"
         }`}
       >
-        <p className="max-w-[18rem] text-balance text-left whitespace-pre-line font-[family-name:var(--font-serif)] text-[1.5rem] font-normal normal-case leading-[1.2] tracking-[0.01em] text-white md:max-w-[20rem] md:text-[1.875rem] md:leading-[1.22]">
+        <p className="max-w-[min(100%,18rem)] text-balance text-left whitespace-pre-line font-[family-name:var(--font-serif)] text-[1.375rem] font-normal normal-case leading-[1.2] tracking-[0.01em] text-white sm:text-[1.5rem] md:max-w-[20rem] md:text-[1.875rem] md:leading-[1.22]">
           {tagline}
         </p>
-        <p className="mx-auto max-w-[26rem] text-balance text-center font-[family-name:var(--font-inter)] text-[0.8125rem] font-normal leading-[1.55] tracking-[0.02em] text-white md:justify-self-center md:text-[0.875rem] md:leading-[1.5]">
+        <p className="w-full max-w-[36rem] text-balance text-left font-[family-name:var(--font-inter)] text-[0.875rem] font-normal leading-[1.6] tracking-[0.02em] text-white md:max-w-[26rem] md:justify-self-center md:text-center md:text-[0.875rem] md:leading-[1.5]">
           {body}
         </p>
         {showCta ? (
-          <div className="flex items-end md:justify-end">
+          <div className="flex w-full justify-start md:w-auto md:justify-end">
             <Link href={hero.ctaHref ?? "#"} className="hero-cta pointer-events-auto">
               {hero.ctaLabel}
             </Link>
