@@ -1,0 +1,40 @@
+{
+  "name": "sjsu-concrete-canoes-website",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "SJSU Concrete Canoes Website",
+  "dependencies": {
+    "@sanity/client": "^7.22.0",
+    "@sanity/icons": "^3.7.4",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^3.99.0",
+    "framer-motion": "^12.38.0",
+    "groq": "^3.99.0",
+    "next": "^15.5.15",
+    "next-sanity": "^9.12.3",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "sanity": "^3.99.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.4",
+    "postcss": "^8.5.13",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^5.9.3"
+  }
+}

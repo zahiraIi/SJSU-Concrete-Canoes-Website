@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --sjsu-blue: #0055a2;
+  --sjsu-gold: #e5b343;
+  --sjsu-white: #ffffff;
+  --ink: #0f172a;
+  --paper: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-inter), "Inter", "Avenir Next", Avenir, "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1120px, 92vw);
+  margin-inline: auto;
+}
+
+.display {
+  font-family: var(--font-archivo-black), "Archivo Black", "Inter", sans-serif;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.font-serif {
+  font-family: var(--font-serif), "Playfair Display", Georgia, serif;
+}
+
+/* Small body / captions — clean sans, airy spacing (matches hero CTA label reference) */
+.text-caption {
+  font-family: var(--font-inter), "Inter", system-ui, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1.55;
+}
+
+@media (min-width: 768px) {
+  .text-caption {
+    font-size: 0.875rem;
+    letter-spacing: 0.055em;
+  }
+}
+
+/* Uppercase micro labels (menu, roles, tiny CTAs) */
+.text-caption-caps {
+  font-family: var(--font-inter), "Inter", system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+/* Hero headline — heavy sans, tight but legible tracking at display sizes */
+.hero-headline {
+  font-family: var(--font-archivo-black), "Archivo Black", "Inter", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  line-height: 0.82;
+}
+
+/* Hero primary CTA — white slab, black caps, sharp corners */
+.hero-cta {
+  font-family: var(--font-inter), "Inter", system-ui, sans-serif;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.88);
+  border-radius: 0;
+  padding: 0.875rem 1.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-cta:hover {
+  background-color: #f8f8f8;
+}
+
+.hero-cta:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* MENU control — match hero CTA family, smaller */
+.hero-menu-trigger {
+  font-family: var(--font-inter), "Inter", system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.88);
+  border-radius: 0;
+  padding: 0.65rem 1rem;
+}
+
+.hero-menu-trigger:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
